@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"donaldwongsuisang.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="商業需求文檔（Business Requirements Document，簡稱BRD）是產品開發流程中至關重要的初始文件，其撰寫質量直接影響專案的立項決策和後續執行效果。一份優質的BRD能夠系統性地闡述業務需求、市場機會與商業價值，有效地說服決策層投入必要資源。成功的BRD不僅需要嚴謹的邏輯框架，還需精準地針對不同讀者量身定制內容。本文將詳細探討BRD的定義、結構組成、撰寫技巧及注意事項，幫助產">
+<meta property="og:type" content="article">
+<meta property="og:title" content="產品經理必備文件 - Business Requirements Document">
+<meta property="og:url" content="https://donaldwongsuisang.github.io/2025/03/05/20250305/index.html">
+<meta property="og:site_name" content="Product Observer">
+<meta property="og:description" content="商業需求文檔（Business Requirements Document，簡稱BRD）是產品開發流程中至關重要的初始文件，其撰寫質量直接影響專案的立項決策和後續執行效果。一份優質的BRD能夠系統性地闡述業務需求、市場機會與商業價值，有效地說服決策層投入必要資源。成功的BRD不僅需要嚴謹的邏輯框架，還需精準地針對不同讀者量身定制內容。本文將詳細探討BRD的定義、結構組成、撰寫技巧及注意事項，幫助產">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-03-05T13:04:41.000Z">
+<meta property="article:modified_time" content="2025-03-09T14:14:01.971Z">
+<meta property="article:author" content="Donald">
+<meta property="article:tag" content="產品經理">
+<meta property="article:tag" content="商業需求文件">
+<meta property="article:tag" content="商業目標定義">
+<meta property="article:tag" content="BRD">
+<meta property="article:tag" content="產品開發流程">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://donaldwongsuisang.github.io/2025/03/05/20250305/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://donaldwongsuisang.github.io/2025/03/05/20250305/","path":"2025/03/05/20250305/","title":"產品經理必備文件 - Business Requirements Document"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>產品經理必備文件 - Business Requirements Document | Product Observer</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Product Observer</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">19</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#BRD%E7%9A%84%E5%AE%9A%E7%BE%A9%E8%88%87%E9%87%8D%E8%A6%81%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">BRD的定義與重要性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BRD%E7%9A%84%E5%8F%97%E7%9C%BE%E8%88%87%E6%87%89%E7%94%A8%E5%A0%B4%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">BRD的受眾與應用場景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BRD%E7%9A%84%E9%97%9C%E9%8D%B5%E7%B5%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-number">3.</span> <span class="nav-text">BRD的關鍵組成部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E6%91%98%E8%A6%81"><span class="nav-number">3.0.1.</span> <span class="nav-text">執行摘要</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9"><span class="nav-number">3.0.2.</span> <span class="nav-text">產品介紹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A2%E5%93%81%E5%83%B9%E5%80%BC"><span class="nav-number">3.0.3.</span> <span class="nav-text">產品價值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E7%AF%84%E7%96%87"><span class="nav-number">3.0.4.</span> <span class="nav-text">專案範疇</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%A2%E5%93%81%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88"><span class="nav-number">3.0.5.</span> <span class="nav-text">產品解決方案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9F%AD%E6%9C%9F%E7%9B%AE%E6%A8%99%E5%92%8C%E4%B8%AD%E9%95%B7%E6%9C%9F%E7%9B%AE%E6%A8%99"><span class="nav-number">3.0.6.</span> <span class="nav-text">短期目標和中長期目標</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%82%E5%A0%B4%E5%88%86%E6%9E%90"><span class="nav-number">3.0.7.</span> <span class="nav-text">市場分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A9%E5%AE%B3%E9%97%9C%E4%BF%82%E4%BA%BA%E5%88%86%E6%9E%90"><span class="nav-number">3.0.8.</span> <span class="nav-text">利害關係人分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SWOT%E5%88%86%E6%9E%90"><span class="nav-number">3.0.9.</span> <span class="nav-text">SWOT分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%B7%E8%A1%8C%E8%A8%88%E5%8A%83"><span class="nav-number">3.0.10.</span> <span class="nav-text">執行計劃</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A0%90%E7%AE%97%E5%92%8C%E8%B2%A1%E5%8B%99%E5%BD%B1%E9%9F%BF"><span class="nav-number">3.0.11.</span> <span class="nav-text">預算和財務影響</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E9%99%90%E5%88%B6"><span class="nav-number">3.0.12.</span> <span class="nav-text">專案限制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A2%A8%E9%9A%AA%E9%A0%90%E4%BC%B0"><span class="nav-number">3.0.13.</span> <span class="nav-text">風險預估</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%92%B0%E5%AF%ABBRD%E7%9A%84%E6%8A%80%E5%B7%A7%E8%88%87%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85"><span class="nav-number">4.</span> <span class="nav-text">撰寫BRD的技巧與注意事項</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%86%E8%A7%A3%E4%BD%A0%E7%9A%84%E5%8F%97%E7%9C%BE"><span class="nav-number">4.1.</span> <span class="nav-text">了解你的受眾</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%9D%E6%8C%81%E9%82%8F%E8%BC%AF%E5%9A%B4%E8%AC%B9"><span class="nav-number">4.2.</span> <span class="nav-text">保持邏輯嚴謹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A8%80%E7%B0%A1%E6%84%8F%E8%B3%85"><span class="nav-number">4.3.</span> <span class="nav-text">言簡意賅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%9C%E6%B3%A8%E5%95%86%E6%A5%AD%E5%83%B9%E5%80%BC%E8%80%8C%E9%9D%9E%E7%94%A2%E5%93%81%E7%B4%B0%E7%AF%80"><span class="nav-number">4.4.</span> <span class="nav-text">關注商業價值而非產品細節</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B8%E6%93%9A%E6%94%AF%E6%8C%81%E8%AB%96%E9%BB%9E"><span class="nav-number">4.5.</span> <span class="nav-text">數據支持論點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B3%E8%A1%A1%E7%90%86%E6%83%B3%E8%88%87%E7%8F%BE%E5%AF%A6"><span class="nav-number">4.6.</span> <span class="nav-text">平衡理想與現實</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%BF%E5%85%8D%E6%8A%80%E8%A1%93%E8%A1%93%E8%AA%9E"><span class="nav-number">4.7.</span> <span class="nav-text">避免技術術語</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%85%E5%88%86%E6%BA%96%E5%82%99%E8%88%87%E7%A0%94%E7%A9%B6"><span class="nav-number">4.8.</span> <span class="nav-text">充分準備與研究</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BRD%E8%88%87%E5%85%B6%E4%BB%96%E6%96%87%E6%AA%94%E7%9A%84%E9%97%9C%E4%BF%82"><span class="nav-number">5.</span> <span class="nav-text">BRD與其他文檔的關係</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BRD%E8%88%87PRD%E7%9A%84%E5%8D%80%E5%88%A5"><span class="nav-number">5.1.</span> <span class="nav-text">BRD與PRD的區別</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BRD%E8%88%87MRD%E7%9A%84%E9%97%9C%E4%BF%82"><span class="nav-number">5.2.</span> <span class="nav-text">BRD與MRD的關係</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BRD%E5%9C%A8%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="nav-number">5.3.</span> <span class="nav-text">BRD在產品開發流程中的位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AB%96"><span class="nav-number">6.</span> <span class="nav-text">結論</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Donald</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/donaldwongsuisang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;donaldwongsuisang" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:donaldwongsuisang@gmail.com" title="E-Mail → mailto:donaldwongsuisang@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://donaldwongsuisang.github.io/2025/03/05/20250305/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Donald">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Product Observer">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="產品經理必備文件 - Business Requirements Document | Product Observer">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          產品經理必備文件 - Business Requirements Document
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2025-03-05 21:04:41" itemprop="dateCreated datePublished" datetime="2025-03-05T21:04:41+08:00">2025-03-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-03-09 22:14:01" itemprop="dateModified" datetime="2025-03-09T22:14:01+08:00">2025-03-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%A2%E5%93%81%E7%B6%93%E7%90%86%E4%BF%AE%E7%85%89%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">產品經理修煉之路</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>商業需求文檔（Business Requirements Document，簡稱BRD）是產品開發流程中至關重要的初始文件，其撰寫質量直接影響專案的立項決策和後續執行效果。一份優質的BRD能夠系統性地闡述業務需求、市場機會與商業價值，有效地說服決策層投入必要資源。成功的BRD不僅需要嚴謹的邏輯框架，還需精準地針對不同讀者量身定制內容。本文將詳細探討BRD的定義、結構組成、撰寫技巧及注意事項，幫助產品經理和專案負責人提升商業需求文檔的撰寫能力。</p>
+<span id="more"></span>
+
+<h2 id="BRD的定義與重要性"><a href="#BRD的定義與重要性" class="headerlink" title="BRD的定義與重要性"></a>BRD的定義與重要性</h2><p>商業需求文檔（BRD）是「一份企業想要運用產品或服務實現目標的藍圖」，涵蓋了新產品開發專案的所有可交付成果以及各階段相關的輸入和輸出。它是產品生命週期中最早期的文檔，主要目的是讓決策者們從制高點的角度理解專案的價值與必要性。BRD將創意系統化整理，一方面幫助自己梳理專案方向，另一方面用於展示給擁有資源的決策者，以獲取產品開發所需的資源。</p>
+<p>BRD的重要性不言而喻。首先，它提供新專案或商業企劃的完整概述，確保所有利害關係人的初期期望與最終產出保持一致。其次，它在執行專案前蒐集需求，確保滿足所有客戶的期望並避免混亂或重複工作。第三，BRD內容如同路線圖，管理人員可以用來分配工作和預算。最後，它能讓團隊成員都專注於目標。若將PRD（產品需求文檔）的好壞視為決定專案質量水平的因素，那麼BRD則決定了專案的商業價值。</p>
+<h2 id="BRD的受眾與應用場景"><a href="#BRD的受眾與應用場景" class="headerlink" title="BRD的受眾與應用場景"></a>BRD的受眾與應用場景</h2><p>BRD主要面向企業高層和決策者，包括CEO、財務總監、市場總監及運營總監等。由於受眾的不同，BRD的內容焦點也會有所調整。如果主要受眾是財務總監，文檔需要側重收益和研發經費；若是市場總監或運營總監，則需強調市場策略和運營方案；若是CEO，則需從多個維度進行全面描述。</p>
+<p>BRD通常由公司幕僚（如特助）或專案管理辦公室（PMO）組織成員撰寫。這類文檔在產品線和產品組合較為複雜的企業中尤為適用。而對於中小型企業，BRD的內容可能會併入市場需求文檔（MRD）中由產品經理負責。BRD在產品開發流程中扮演著承前啟後的角色，是立項前大量調研和考察的結晶，也是後續開發工作的指導方針。</p>
+<h2 id="BRD的關鍵組成部分"><a href="#BRD的關鍵組成部分" class="headerlink" title="BRD的關鍵組成部分"></a>BRD的關鍵組成部分</h2><p>一份完整的BRD通常包含多個關鍵組成部分，雖然格式可能因企業而異，但以下要素是不可或缺的：</p>
+<h4 id="執行摘要"><a href="#執行摘要" class="headerlink" title="執行摘要"></a>執行摘要</h4><p>執行摘要是BRD的開場白，需要簡明扼要地概述整個文檔的核心內容。這部分應清晰呈現專案的目的、價值主張、所需資源以及預期成果，讓決策者能在短時間內掌握關鍵信息。執行摘要雖然篇幅簡短，但撰寫時必須精準抓住專案的本質，避免空洞的表述。有效的執行摘要應當像是整份文檔的濃縮版，能夠獨立存在並傳達完整的商業價值。</p>
+<h4 id="產品介紹"><a href="#產品介紹" class="headerlink" title="產品介紹"></a>產品介紹</h4><p>產品介紹部分需要用簡潔的語言說明即將開發的產品是什麼。理想情況下，應能用一句話講明白產品的作用、定位與願景。這部分可以分別從用戶和專業人士的角度進行描述，全面呈現產品的基本特性。產品介紹不宜過於技術化，而應著重於產品的功能定位和價值主張，讓非技術背景的決策者也能輕鬆理解。</p>
+<h4 id="產品價值"><a href="#產品價值" class="headerlink" title="產品價值"></a>產品價值</h4><p>產品價值部分闡述為何要開發這個產品，需要從用戶需求和戰略價值兩個維度進行描述。在用戶需求方面，需要詳述產品將滿足哪些需求、解決哪些痛點；在戰略價值方面，則需說明產品能為企業帶來什麼價值，如何獲取市場利潤、擴大市場份額等。這部分是BRD的核心，直接關係到決策者是否會支持該專案，因此論述必須有理有據，最好能輔以市場數據和用戶研究結果。</p>
+<h4 id="專案範疇"><a href="#專案範疇" class="headerlink" title="專案範疇"></a>專案範疇</h4><p>專案範疇界定了產品開發的邊界，明確了哪些功能和特性在本次開發範圍內，哪些不在。清晰的範疇定義有助於控制項目規模，避免範疇蔓延（scope creep）導致的開發延誤和資源浪費。在撰寫專案範疇時，應當既要全面又要具體，既包括功能性需求，也包括非功能性需求，如性能、安全性和合規性等。</p>
+<h4 id="產品解決方案"><a href="#產品解決方案" class="headerlink" title="產品解決方案"></a>產品解決方案</h4><p>產品解決方案部分需要描繪產品的框架和輪廓，主要包含四個方面：產品形態（架構是資訊形態、社交形態還是搜索形態等）、業務模式（面向消費者還是企業、參與者有哪些、如何形成閉環）、運營模式（採用什麼樣的運營策略和手段讓產品運營起來）以及盈利模式（通過什麼方式獲取收益，如廣告、增值服務或商品銷售等）。這部分應盡可能具體且可行，讓決策者能夠清晰理解產品的運作方式。</p>
+<h4 id="短期目標和中長期目標"><a href="#短期目標和中長期目標" class="headerlink" title="短期目標和中長期目標"></a>短期目標和中長期目標</h4><p>目標設定部分需要明確產品在不同時間節點上的預期成果。短期目標通常聚焦於產品上市後的初期表現，如用戶獲取數量、活躍度等；中長期目標則關注產品的持續發展和市場地位。目標設定應遵循SMART原則（具體、可衡量、可達成、相關性、時限性），並與企業的整體戰略保持一致。設定合理的目標不僅有助於獲得決策者的支持，也為後續的績效評估提供了標準。</p>
+<h4 id="市場分析"><a href="#市場分析" class="headerlink" title="市場分析"></a>市場分析</h4><p>市場分析部分需要呈現產品所處市場環境的全貌，主要包括市場容量（評估目標市場的規模和潛力）、競爭對手分析（了解競品的解決方案、優勢劣勢）、對市場未來的判斷（包括競爭格局、行業風險、政策變化等）以及市場機會（找到突破口，確定發展定位）。市場分析應基於可靠的數據和深入的調研，避免主觀臆斷。這部分的質量直接影響決策者對市場前景的判斷，因此必須客觀、全面且具有前瞻性。</p>
+<h4 id="利害關係人分析"><a href="#利害關係人分析" class="headerlink" title="利害關係人分析"></a>利害關係人分析</h4><p>利害關係人分析需要識別並評估所有可能受到專案影響或對專案有影響的個人和組織。這包括內部利害關係人（如不同部門的管理者和員工）以及外部利害關係人（如客戶、供應商和監管機構）。分析應包括各利害關係人的需求、期望、影響力和利益關係，以及管理這些關係的策略。全面的利害關係人分析有助於產品開發過程中的溝通協調，減少阻力和衝突。</p>
+<h4 id="SWOT分析"><a href="#SWOT分析" class="headerlink" title="SWOT分析"></a>SWOT分析</h4><p>SWOT分析是評估產品和專案的有效工具，它從四個維度進行全面分析：優勢（Strengths）、劣勢（Weaknesses）、機會（Opportunities）和威脅（Threats）。優勢和劣勢是內部因素，機會和威脅則是外部因素。通過SWOT分析，可以清晰地了解產品的競爭優勢和潛在風險，為決策提供參考。SWOT分析應當具體而非抽象，每個要點都應有事實依據，避免流於形式。</p>
+<h4 id="執行計劃"><a href="#執行計劃" class="headerlink" title="執行計劃"></a>執行計劃</h4><p>執行計劃描述了產品開發的階段性路線圖，通常分為多個階段：第一階段可能是用最小可行產品（MVP）驗證用戶需求；第二階段則是完善產品，擴大用戶規模；後續階段可能包括功能擴展、市場擴張等。每個階段都應有明確的時間範圍、目標和里程碑。執行計劃不需要過於詳細，但應當提供足夠的信息，讓決策者了解開發過程的大致節奏和關鍵節點。</p>
+<h4 id="預算和財務影響"><a href="#預算和財務影響" class="headerlink" title="預算和財務影響"></a>預算和財務影響</h4><p>預算和財務影響部分需要詳細估算專案的投入成本和預期收益。成本包括人力資源、設備採購、技術開發、市場推廣等方面的開支；收益則可根據盈利模式的參考值進行估算，如廣告收入可參考CPC&#x2F;CPA等指標。財務分析應當包括投資回報率（ROI）、回本期等關鍵指標，幫助決策者評估專案的財務可行性。這部分是決策者最為關注的內容之一，因此數據必須合理、可信，且有明確的計算依據。</p>
+<h4 id="專案限制"><a href="#專案限制" class="headerlink" title="專案限制"></a>專案限制</h4><p>專案限制部分需要明確識別可能影響專案成功的各種約束條件，如技術限制、資源限制、時間限制、法規限制等。識別這些限制有助於在專案規劃階段就考慮到潛在障礙，做好應對準備。在描述限制時，應當既要全面又要具體，避免籠統的表述。同時，也可以提出克服這些限制的初步方案，展示團隊的問題解決能力。</p>
+<h4 id="風險預估"><a href="#風險預估" class="headerlink" title="風險預估"></a>風險預估</h4><p>風險預估需要識別所有可能影響專案目標實現或增加成本的因素，並評估其發生的可能性和嚴重程度。更重要的是，還要提供相應的風險規避預案，明確預案的效益。風險分析應當全面且具有前瞻性，包括技術風險、市場風險、競爭風險、團隊風險等多個維度。良好的風險預估能夠增強決策者的信心，表明團隊已經做好了充分的準備工作。</p>
+<h2 id="撰寫BRD的技巧與注意事項"><a href="#撰寫BRD的技巧與注意事項" class="headerlink" title="撰寫BRD的技巧與注意事項"></a>撰寫BRD的技巧與注意事項</h2><p>撰寫一份高質量的BRD需要遵循一些關鍵技巧，同時避免常見的陷阱。以下是一些實用的建議：</p>
+<h3 id="了解你的受眾"><a href="#了解你的受眾" class="headerlink" title="了解你的受眾"></a>了解你的受眾</h3><p>撰寫BRD前，首先要明確文檔的主要讀者是誰。如果主要面向財務決策者，應當強調投資回報和成本控制；如果面向技術決策者，則需要更多地關注技術可行性和資源需求。不同的讀者關注點不同，針對性地調整內容重點能夠大大提高文檔的說服力。在撰寫過程中，始終將讀者的需求和關注點放在首位，確保文檔內容能夠有效地解答他們的疑問。</p>
+<h3 id="保持邏輯嚴謹"><a href="#保持邏輯嚴謹" class="headerlink" title="保持邏輯嚴謹"></a>保持邏輯嚴謹</h3><p>BRD的邏輯結構必須清晰嚴謹，各部分之間應當有明確的邏輯關聯。例如，市場分析應當支持產品價值主張，執行計劃應當與專案目標相呼應，預算規劃應當與執行計劃相匹配。良好的邏輯結構不僅有助於讀者理解，也能增強文檔的說服力。在撰寫過程中，可以使用思維導圖等工具梳理邏輯框架，確保各部分之間的一致性和連貫性。</p>
+<h3 id="言簡意賅"><a href="#言簡意賅" class="headerlink" title="言簡意賅"></a>言簡意賅</h3><p>BRD不需要過於冗長，應當言簡意賅，直接切中要點。決策者通常時間有限，無法閱讀過於詳細的文檔。因此，每個部分都應當精煉地表達核心信息，避免不必要的技術細節和冗餘描述。使用清晰、簡潔的語言，結合圖表、數據等視覺元素，能夠更高效地傳達信息。同時，執行摘要尤為重要，應當能在短時間內讓讀者掌握整個文檔的精華。</p>
+<h3 id="關注商業價值而非產品細節"><a href="#關注商業價值而非產品細節" class="headerlink" title="關注商業價值而非產品細節"></a>關注商業價值而非產品細節</h3><p>BRD的重點應當放在產品的商業價值上，而非具體的產品細節。決策者更關心產品能為企業帶來什麼價值，如何提升市場競爭力，如何創造收益，而非產品的具體功能和特性。在描述產品時，應當從商業角度出發，強調產品如何解決業務問題、滿足市場需求、創造商業價值。產品細節可以在後續的PRD中詳細描述，而BRD則需要專注於更高層次的商業思考。</p>
+<h3 id="數據支持論點"><a href="#數據支持論點" class="headerlink" title="數據支持論點"></a>數據支持論點</h3><p>在BRD中提出的任何觀點或預測，都應當有可靠的數據支持。例如，在市場分析部分，應當引用市場研究報告、用戶調查結果等數據；在財務預估部分，應當基於合理的假設和計算方法。數據的來源應當可靠，計算方法應當透明，以增強論點的可信度。如果缺乏直接的數據支持，也可以使用類比法、假設情境等方式進行推理，但必須明確說明推理的依據和邏輯。</p>
+<h3 id="平衡理想與現實"><a href="#平衡理想與現實" class="headerlink" title="平衡理想與現實"></a>平衡理想與現實</h3><p>BRD需要在理想願景和現實可行性之間找到平衡。一方面，需要展示產品的遠大前景和潛在價值，激發決策者的興趣；另一方面，也需要務實地評估資源限制、市場風險等現實因素，避免過於樂觀的預測。平衡的方法是設定分階段的目標，近期目標更加切實可行，中長期目標則可以更具前瞻性和願景性。同時，也要為不確定性留出餘地，避免過於剛性的規劃。</p>
+<h3 id="避免技術術語"><a href="#避免技術術語" class="headerlink" title="避免技術術語"></a>避免技術術語</h3><p>撰寫BRD時應當避免過多的技術術語和行業黑話，除非確定所有讀者都能理解。使用簡單、直白的語言表達複雜的概念，能夠確保所有決策者，無論其技術背景如何，都能理解文檔內容。如果必須使用專業術語，應當提供簡短的解釋或註釋。清晰的溝通是BRD的首要目標，而不是展示撰寫者的專業知識。</p>
+<h3 id="充分準備與研究"><a href="#充分準備與研究" class="headerlink" title="充分準備與研究"></a>充分準備與研究</h3><p>BRD不是簡單地寫個文檔，而是需要大量的準備工作和研究。在撰寫前，應當進行充分的市場調研、用戶需求分析、競品分析等工作，確保文檔中的論點和數據有堅實的基礎。準備工作的質量直接影響BRD的可信度和說服力。此外，還應當了解企業的戰略方向和資源狀況，確保BRD與企業的整體發展策略保持一致。</p>
+<h2 id="BRD與其他文檔的關係"><a href="#BRD與其他文檔的關係" class="headerlink" title="BRD與其他文檔的關係"></a>BRD與其他文檔的關係</h2><p>BRD在產品開發流程中與其他多種文檔有著密切的關聯，理解這些關係有助於更好地定位BRD的角色和內容。</p>
+<h3 id="BRD與PRD的區別"><a href="#BRD與PRD的區別" class="headerlink" title="BRD與PRD的區別"></a>BRD與PRD的區別</h3><p>商業需求文檔（BRD）和產品需求文檔（PRD）是產品開發中的兩個重要文檔，但它們的目的和受眾有所不同。BRD主要面向企業高層和決策者，關注產品的商業價值和市場策略；而PRD則主要面向技術團隊和開發人員，詳細描述產品的功能需求和技術規格。BRD更注重「為什麼」和「是什麼」的問題，而PRD則更關注「怎麼做」的問題。在大型企業中，BRD和PRD通常是分開的文檔；而在中小型企業，它們的內容可能會有所重疊。</p>
+<h3 id="BRD與MRD的關係"><a href="#BRD與MRD的關係" class="headerlink" title="BRD與MRD的關係"></a>BRD與MRD的關係</h3><p>市場需求文檔（MRD）主要關注市場需求、競爭分析和營銷策略，它比BRD更專注於市場層面的分析。在某些組織結構中，BRD可能會包含MRD的部分內容，特別是在中小型企業，為了簡化流程，這些文檔可能會合併在一起。理解BRD與MRD的關係有助於避免內容重複，同時確保所有關鍵的市場信息都被納入考量。</p>
+<h3 id="BRD在產品開發流程中的位置"><a href="#BRD在產品開發流程中的位置" class="headerlink" title="BRD在產品開發流程中的位置"></a>BRD在產品開發流程中的位置</h3><p>BRD是產品開發流程中最早期的文檔之一，它在產品立項前就需要完成，用於獲取決策者的支持和資源投入。完成BRD並獲得批准後，才會進入更詳細的需求分析和產品設計階段，生成PRD、設計文檔等後續文檔。BRD的質量直接影響整個產品開發流程的方向和資源配置，因此在產品生命周期的早期就需要投入足夠的精力確保其質量。</p>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>撰寫一份高質量的商業需求文檔是產品開發成功的關鍵第一步。BRD不僅是說服決策者投入資源的工具，也是指導後續產品開發方向的重要依據。一份優秀的BRD應當清晰地闡述產品的商業價值、市場定位和發展策略，同時也要對資源需求、執行計劃和潛在風險進行全面評估。</p>
+<p>在撰寫BRD時，需要牢記文檔的目的和受眾，保持邏輯嚴謹，言簡意賅，關注商業價值而非產品細節，用數據支持論點，平衡理想與現實，避免過多的技術術語，並進行充分的準備和研究工作。同時，也要理解BRD與其他產品文檔（如PRD、MRD）的區別和關係，確保整個產品開發流程的文檔體系完整且協調。</p>
+<p>商業需求文檔的撰寫不僅僅是文檔編寫技巧的問題，更是對產品視野、市場洞察和商業思維的考驗。通過不斷實踐和反思，產品經理可以提升BRD的撰寫能力，為產品開發奠定堅實的基礎，最終實現產品的商業成功。</p>
+<p><strong>參考連結</strong>：  </p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.atlassian.com/software/jira/requirements">Atlassian 的產品需求管理指南</a>  </li>
+<li><a target="_blank" rel="noopener" href="https://www.pmtone.com/business-requirement-document/">PMTone 的 BRD 範本與案例</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A2%E5%93%81%E7%B6%93%E7%90%86/" rel="tag"># 產品經理</a>
+              <a href="/tags/%E5%95%86%E6%A5%AD%E9%9C%80%E6%B1%82%E6%96%87%E4%BB%B6/" rel="tag"># 商業需求文件</a>
+              <a href="/tags/%E5%95%86%E6%A5%AD%E7%9B%AE%E6%A8%99%E5%AE%9A%E7%BE%A9/" rel="tag"># 商業目標定義</a>
+              <a href="/tags/BRD/" rel="tag"># BRD</a>
+              <a href="/tags/%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B/" rel="tag"># 產品開發流程</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/03/04/20250304/" rel="prev" title="解鎖產品經理必備的技能">
+                  <i class="fa fa-angle-left"></i> 解鎖產品經理必備的技能
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/03/06/20250306/" rel="next" title="產品經理必備文件 - Market Requirements Document">
+                  產品經理必備文件 - Market Requirements Document <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Donald</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
