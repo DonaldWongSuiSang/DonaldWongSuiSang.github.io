@@ -20,23 +20,29 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"donaldwongsuisang.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Product Observer">
-<meta property="og:url" content="https://donaldwongsuisang.github.io/index.html">
+    <meta name="description" content="本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。 需求背景業務場景得到APP定位為一款知識付費平台，專注於為時間有限但學習慾望強烈的現代人提供系統化知識內容。使用者主要在以下場景中使用本產品：  通勤時間：使用者在大眾運輸工具上利用碎片時間進行音訊內容學習 運動鍛鍊：使用者在晨跑或健身時透過音訊學習專業知識 睡前閱讀：使用者睡前">
+<meta property="og:type" content="article">
+<meta property="og:title" content="得到APP產品需求文件">
+<meta property="og:url" content="https://donaldwongsuisang.github.io/2025/03/10/20250310/index.html">
 <meta property="og:site_name" content="Product Observer">
+<meta property="og:description" content="本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。 需求背景業務場景得到APP定位為一款知識付費平台，專注於為時間有限但學習慾望強烈的現代人提供系統化知識內容。使用者主要在以下場景中使用本產品：  通勤時間：使用者在大眾運輸工具上利用碎片時間進行音訊內容學習 運動鍛鍊：使用者在晨跑或健身時透過音訊學習專業知識 睡前閱讀：使用者睡前">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-03-10T13:42:48.000Z">
+<meta property="article:modified_time" content="2025-03-10T13:50:31.780Z">
 <meta property="article:author" content="Donald">
-<meta property="article:tag" content="product manager,">
+<meta property="article:tag" content="產品需求文檔">
+<meta property="article:tag" content="知識付費">
+<meta property="article:tag" content="產品分析">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://donaldwongsuisang.github.io/">
+<link rel="canonical" href="https://donaldwongsuisang.github.io/2025/03/10/20250310/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://donaldwongsuisang.github.io/2025/03/10/20250310/","path":"2025/03/10/20250310/","title":"得到APP產品需求文件"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Product Observer</title>
+<title>得到APP產品需求文件 | Product Observer</title>
   
 
 
@@ -69,7 +75,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Product Observer</h1>
+      <p class="site-title">Product Observer</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -95,7 +101,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -108,6 +114,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">需求背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A5%AD%E5%8B%99%E5%A0%B4%E6%99%AF"><span class="nav-number">1.1.</span> <span class="nav-text">業務場景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E6%88%B6%E8%AA%BF%E6%9F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">用戶調查</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AB%B6%E6%8A%80%E5%88%86%E6%9E%90"><span class="nav-number">1.2.1.</span> <span class="nav-text">競技分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%80%85%E7%95%AB%E5%83%8F%E5%88%86%E6%9E%90"><span class="nav-number">1.2.2.</span> <span class="nav-text">使用者畫像分析</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9C%80%E6%B1%82%E7%AF%84%E5%9C%8D"><span class="nav-number">1.3.</span> <span class="nav-text">需求範圍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%AA%94%E8%AA%AA%E6%98%8E"><span class="nav-number">1.4.</span> <span class="nav-text">文檔說明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E8%A9%B3%E7%B4%B0%E8%AA%AA%E6%98%8E"><span class="nav-number">2.</span> <span class="nav-text">功能詳細說明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A2%E5%93%81%E9%82%8F%E8%BC%AF"><span class="nav-number">2.1.</span> <span class="nav-text">產品邏輯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B3%87%E8%A8%8A%E6%9E%B6%E6%A7%8B"><span class="nav-number">2.2.</span> <span class="nav-text">資訊架構</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%92%E5%8B%95%E5%8E%9F%E5%9E%8B"><span class="nav-number">2.3.</span> <span class="nav-text">互動原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%97%E8%A1%A8"><span class="nav-number">2.4.</span> <span class="nav-text">功能需求列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%85%A7%E5%AE%B9%E6%B6%88%E8%B2%BB%E6%A8%A1%E7%B5%84"><span class="nav-number">2.4.1.</span> <span class="nav-text">1. 內容消費模組</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E7%A4%BE%E7%BE%A4%E4%BA%92%E5%8B%95%E6%A8%A1%E7%B5%84"><span class="nav-number">2.4.2.</span> <span class="nav-text">2. 社群互動模組</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%80%8B%E4%BA%BA%E5%8C%96%E6%9C%8D%E5%8B%99%E6%A8%A1%E7%B5%84"><span class="nav-number">2.4.3.</span> <span class="nav-text">3. 個人化服務模組</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E5%B8%B3%E6%88%B6%E7%AE%A1%E7%90%86%E6%A8%A1%E7%B5%84"><span class="nav-number">2.4.4.</span> <span class="nav-text">4. 帳戶管理模組</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%9E%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="nav-number">2.5.</span> <span class="nav-text">非功能需求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%8B%E9%BB%9E%E9%9C%80%E6%B1%82"><span class="nav-number">3.</span> <span class="nav-text">埋點需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%9C%E9%8D%B5%E8%A1%8C%E7%82%BA%E5%9F%8B%E9%BB%9E"><span class="nav-number">3.1.</span> <span class="nav-text">關鍵行為埋點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%80%85%E8%A1%8C%E7%82%BA%E5%88%86%E6%9E%90"><span class="nav-number">3.2.</span> <span class="nav-text">使用者行為分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%88%E6%A1%88%E8%A6%8F%E5%8A%83"><span class="nav-number">4.</span> <span class="nav-text">專案規劃</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%96%8B%E7%99%BC%E6%8E%92%E6%9C%9F"><span class="nav-number">4.1.</span> <span class="nav-text">開發排期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%A8%E9%9A%AA%E8%A9%95%E4%BC%B0"><span class="nav-number">4.2.</span> <span class="nav-text">風險評估</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B8%BD%E7%B5%90%E8%88%87%E5%BB%BA%E8%AD%B0"><span class="nav-number">5.</span> <span class="nav-text">總結與建議</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -157,16 +164,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://donaldwongsuisang.github.io/2025/03/10/20250310/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -180,13 +188,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Product Observer">
+      <meta itemprop="name" content="得到APP產品需求文件 | Product Observer">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/10/20250310/" class="post-title-link" itemprop="url">得到APP產品需求文件</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          得到APP產品需求文件
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -218,8 +226,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。</p>
+    <div class="post-body" itemprop="articleBody"><p>本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。</p>
 <h2 id="需求背景"><a href="#需求背景" class="headerlink" title="需求背景"></a>需求背景</h2><h3 id="業務場景"><a href="#業務場景" class="headerlink" title="業務場景"></a>業務場景</h3><p>得到APP定位為一款知識付費平台，專注於為時間有限但學習慾望強烈的現代人提供系統化知識內容。使用者主要在以下場景中使用本產品：</p>
 <ol>
 <li>通勤時間：使用者在大眾運輸工具上利用碎片時間進行音訊內容學習</li>
@@ -680,7 +687,6 @@
 </ol>
 <p>最終目標是打造一個完整的知識服務生態，為使用者提供從內容獲取到知識應用的全流程解決方案。</p>
 
-      
     </div>
 
     
@@ -688,272 +694,23 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A2%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%AA%94/" rel="tag"># 產品需求文檔</a>
+              <a href="/tags/%E7%9F%A5%E8%AD%98%E4%BB%98%E8%B2%BB/" rel="tag"># 知識付費</a>
+              <a href="/tags/%E7%94%A2%E5%93%81%E5%88%86%E6%9E%90/" rel="tag"># 產品分析</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://donaldwongsuisang.github.io/2025/03/09/20250309/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Donald">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/09/20250309/" class="post-title-link" itemprop="url">得到APP市場需求文檔分析</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2025-03-09 22:04:11 / Modified: 22:57:53" itemprop="dateCreated datePublished" datetime="2025-03-09T22:04:11+08:00">2025-03-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%A2%E5%93%81%E5%88%86%E6%9E%90/" itemprop="url" rel="index"><span itemprop="name">產品分析</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>在當今快節奏的社會環境中，知識付費市場蓬勃發展，滿足了現代人對高品質內容和個人成長的持續需求。得到APP作為知識服務領域的重要參與者，以其獨特的內容生態和商業模式贏得了一定市場份額。本文檔旨在全面分析得到APP的市場需求狀況，為產品戰略優化提供參考。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/03/09/20250309/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://donaldwongsuisang.github.io/2025/03/08/20250308/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Donald">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/08/20250308/" class="post-title-link" itemprop="url">如何成為成功的台灣產品經理：職責與技能指南</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2025-03-08 05:52:08 / Modified: 22:28:17" itemprop="dateCreated datePublished" datetime="2025-03-08T05:52:08+08:00">2025-03-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%A2%E5%93%81%E7%B6%93%E7%90%86%E5%85%A5%E9%96%80/" itemprop="url" rel="index"><span itemprop="name">產品經理入門</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>台灣的產品經理角色隨著企業規模、產業特性與業務模式而呈現多樣化的發展。產品經理作為連結市場需求與產品開發的關鍵角色，在不同企業環境中衍生出多種類型，包括研發型、銷售型與傳統產品型，以及針對不同業務模式的B2B與B2C產品經理。本報告將深入分析這些不同類型產品經理的工作內容、職責差異與專業要求，為有志於從事產品管理工作的專業人士提供全面參考。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/03/08/20250308/#more" rel="contents">
-                Read more &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/03/09/20250309/" rel="prev" title="得到APP市場需求文檔分析">
+                  <i class="fa fa-angle-left"></i> 得到APP市場需求文檔分析
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://donaldwongsuisang.github.io/2025/03/07/20250307/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Donald">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/07/20250307/" class="post-title-link" itemprop="url">產品經理必備文件 - Product Requirements Document</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-03-07 02:52:20" itemprop="dateCreated datePublished" datetime="2025-03-07T02:52:20+08:00">2025-03-07</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-03-09 22:14:10" itemprop="dateModified" datetime="2025-03-09T22:14:10+08:00">2025-03-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%A2%E5%93%81%E7%B6%93%E7%90%86%E4%BF%AE%E7%85%89%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">產品經理修煉之路</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>產品需求文檔（Product Requirements Document，簡稱 PRD）是產品開發過程中不可或缺的核心文件，它清晰定義了產品功能與需求，確保團隊成員對產品目標達成一致理解。一份優質的 PRD 能有效促進溝通，減少誤解，提高開發效率，並確保最終產品符合使用者需求與商業目標。本文將深入探討 PRD 的本質定義、關鍵組成部分、撰寫技巧，以及實用建議，幫助產品經理與團隊成員掌握 PRD 撰寫的精髓。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/03/07/20250307/#more" rel="contents">
-                Read more &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -961,101 +718,7 @@
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://donaldwongsuisang.github.io/2025/03/06/20250306/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Donald">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Product Observer">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/03/06/20250306/" class="post-title-link" itemprop="url">產品經理必備文件 - Market Requirements Document</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-03-06 22:52:20" itemprop="dateCreated datePublished" datetime="2025-03-06T22:52:20+08:00">2025-03-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-03-09 22:14:07" itemprop="dateModified" datetime="2025-03-09T22:14:07+08:00">2025-03-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%A2%E5%93%81%E7%B6%93%E7%90%86%E4%BF%AE%E7%85%89%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">產品經理修煉之路</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>市場需求文檔（Market Requirements Document，簡稱MRD）是產品開發流程中的關鍵戰略文件，它橋接了商業願景與具體產品開發之間的鴻溝。一份優質的MRD能夠清晰定義市場需求、目標客群、競爭格局及產品定位，為產品團隊提供明確方向，大幅提升產品成功的機率。本文將深入探討MRD的定義、結構組成、撰寫技巧及常見錯誤，幫助產品經理和市場專家打造出高品質且富有戰略意義的市場需求文檔。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/03/06/20250306/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
