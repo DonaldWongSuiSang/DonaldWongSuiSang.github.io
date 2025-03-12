@@ -20,18 +20,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"donaldwongsuisang.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。 需求背景業務場景得到APP定位為一款知識付費平台，專注於為時間有限但學習慾望強烈的現代人提供系統化知識內容。使用者主要在以下場景中使用本產品：  通勤時間：使用者在大眾運輸工具上利用碎片時間進行音訊內容學習 運動鍛鍊：使用者在晨跑或健身時透過音訊學習專業知識 睡前閱讀：使用者睡前">
+    <meta name="description" content="本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="得到APP產品需求文件">
 <meta property="og:url" content="https://donaldwongsuisang.github.io/2025/03/10/20250310/index.html">
 <meta property="og:site_name" content="Product Observer">
-<meta property="og:description" content="本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。 需求背景業務場景得到APP定位為一款知識付費平台，專注於為時間有限但學習慾望強烈的現代人提供系統化知識內容。使用者主要在以下場景中使用本產品：  通勤時間：使用者在大眾運輸工具上利用碎片時間進行音訊內容學習 運動鍛鍊：使用者在晨跑或健身時透過音訊學習專業知識 睡前閱讀：使用者睡前">
+<meta property="og:description" content="本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-03-10T13:42:48.000Z">
-<meta property="article:modified_time" content="2025-03-10T13:50:31.780Z">
+<meta property="article:modified_time" content="2025-03-10T14:43:55.238Z">
 <meta property="article:author" content="Donald">
-<meta property="article:tag" content="產品需求文檔">
 <meta property="article:tag" content="知識付費">
+<meta property="article:tag" content="產品需求文檔">
 <meta property="article:tag" content="產品分析">
 <meta name="twitter:card" content="summary">
 
@@ -89,7 +89,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">23</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">3</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">28</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">3</span></a></li>
   </ul>
 </nav>
 
@@ -129,7 +129,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -140,7 +140,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">28</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -205,7 +205,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2025-03-10 21:42:48 / Modified: 21:50:31" itemprop="dateCreated datePublished" datetime="2025-03-10T21:42:48+08:00">2025-03-10</time>
+      <time title="Created: 2025-03-10 21:42:48 / Modified: 22:43:55" itemprop="dateCreated datePublished" datetime="2025-03-10T21:42:48+08:00">2025-03-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -227,6 +227,8 @@
     
     
     <div class="post-body" itemprop="articleBody"><p>本文件為「得到APP」的詳細產品需求、功能規劃及技術實現方案，倒推得到APP當時開發時的指南，用作練習PRD 的實作。</p>
+<span id="more"></span>
+
 <h2 id="需求背景"><a href="#需求背景" class="headerlink" title="需求背景"></a>需求背景</h2><h3 id="業務場景"><a href="#業務場景" class="headerlink" title="業務場景"></a>業務場景</h3><p>得到APP定位為一款知識付費平台，專注於為時間有限但學習慾望強烈的現代人提供系統化知識內容。使用者主要在以下場景中使用本產品：</p>
 <ol>
 <li>通勤時間：使用者在大眾運輸工具上利用碎片時間進行音訊內容學習</li>
@@ -695,8 +697,8 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%94%A2%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%AA%94/" rel="tag"># 產品需求文檔</a>
               <a href="/tags/%E7%9F%A5%E8%AD%98%E4%BB%98%E8%B2%BB/" rel="tag"># 知識付費</a>
+              <a href="/tags/%E7%94%A2%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%AA%94/" rel="tag"># 產品需求文檔</a>
               <a href="/tags/%E7%94%A2%E5%93%81%E5%88%86%E6%9E%90/" rel="tag"># 產品分析</a>
           </div>
 
@@ -709,6 +711,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2025/03/11/20250311/" rel="next" title="敏捷開發研究：定義、實踐特點與台灣市場的實施挑戰">
+                  敏捷開發研究：定義、實踐特點與台灣市場的實施挑戰 <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>
